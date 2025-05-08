@@ -5,6 +5,7 @@ import inspect
 import pandas as pd
 
 from src.agent import MyAgent
+from src.utils import hf_oauth
 
 # (Keep Constants as is)
 # --- Constants ---
