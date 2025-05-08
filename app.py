@@ -4,24 +4,24 @@ import requests
 import inspect
 import pandas as pd
 
-from agent import MyAgent
+from src.agent import MyAgent
 
 # (Keep Constants as is)
 # --- Constants ---
-DEFAULT_API_URL = "https://huggingface.co/spaces/eranmi/agents_final_projects"
+DEFAULT_API_URL = "https://agents-course-unit4-scoring.hf.space"
 
 
 # --- Basic Agent Definition ---
 # ----- THIS IS WERE YOU CAN BUILD WHAT YOU WANT ------
-class BasicAgent:
-    def __init__(self):
-        print("BasicAgent initialized.")
+# class BasicAgent:
+#     def __init__(self):
+#         print("BasicAgent initialized.")
 
-    def __call__(self, question: str) -> str:
-        print(f"Agent received question (first 50 chars): {question[:50]}...")
-        fixed_answer = "This is a default answer."
-        print(f"Agent returning fixed answer: {fixed_answer}")
-        return fixed_answer
+#     def __call__(self, question: str) -> str:
+#         print(f"Agent received question (first 50 chars): {question[:50]}...")
+#         fixed_answer = "This is a default answer."
+#         print(f"Agent returning fixed answer: {fixed_answer}")
+#         return fixed_answer
 
 
 def run_and_submit_all(profile: gr.OAuthProfile | None):

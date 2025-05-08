@@ -6,9 +6,18 @@ authors = [
     {name = "AnnaErsh",email = "aershova096@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 dependencies = [
-    "pandas (>=2.2.3,<3.0.0)"
+    "pandas (>=2.2.3,<3.0.0)",
+    "llama-index (>=0.12.34,<0.13.0)",
+    "gradio (>=5.29.0,<6.0.0)",
+    "llama-index-vector-stores-chroma (>=0.4.1,<0.5.0)",
+    "llama-index-utils-workflow (>=0.3.1,<0.4.0)",
+    "llama-index-llms-huggingface-api (>=0.4.2,<0.5.0)",
+    "duckduckgo-search (>=8.0.1,<9.0.0)",
+    "itsdangerous (>=2.2.0,<3.0.0)",
+    "asyncio (>=3.4.3,<4.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
 ]
 
 
