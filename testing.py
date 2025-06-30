@@ -1,8 +1,16 @@
+import os
+from dotenv import load_dotenv
+from huggingface_hub import login
 import asyncio
 import requests
 
 from src.agent import MyAgent
 from src.utils import Logger
+
+# Log into HF
+load_dotenv()
+hf_token = os.getenv("HUGGINGFACE_HUB_TOKEN")
+login(hf_token)
 
 DEFAULT_API_URL = "https://agents-course-unit4-scoring.hf.space"
 
